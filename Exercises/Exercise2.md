@@ -9,7 +9,7 @@ Functional Dependencies:
  1. **OwnerPhone** --> (OwnerLastName, OwnerFirstName, OwnerEmail)
  
 PET & OWNER Candidate Keys: PetName   
-**Is every determinant a candidate key?**  
+**Is every determinant a candidate key?**
 NOPE __PetName__, __OwnerEmail__ and __OwnerPhone__ are NOT candidate keys.
 
 ## ***Step Two***
