@@ -22,7 +22,7 @@ Break into two relations: OWNER & PET
  __Functional Dependencies__:
  * **OwnerEmail** --> (OwnerLastName, OwnerFirstName, OwnerPhone)
  * **OwnerPhone** --> (OwnerLastName, OwnerFirstName, OwnerEmail)
- * OWNER Candidate Keys: OwnerPhone, OwnerEmail
+ * OWNER Candidate Keys: OwnerPhone, OwnerEmail   
 ***Is every determinant a candidate key?***
 
 YES OwnerEmail and OwnerPhone are candidate keys!
@@ -36,7 +36,7 @@ We can use __OwnerPhone__ as primary key:
 Functional Dependencies:
  * **PetName**--> (PetType, PetBreed, PetDOB, OwnerPhone)
   
-PET and Service Candidate Keys: PetName
+PET and Service Candidate Keys: PetName   
 ***Is every determinant a candidate key?***
 No PetName is not a candidate key
 
@@ -48,7 +48,7 @@ Break Pet into two relations, PET and SERVICE
  * **SERVICE** (PetName, Date, Service, Charge)
 PET  Functional Dependencies:
  * **PetName** --> (PetType, PetBreed, PetDOB, OwnerPhone)
-PET Candidate Keys: PetNa
+PET Candidate Keys: PetName   
 ***Is every determinant a candidate key?***
 YES PetName is a candidate key!
 #### ***NORMALIZED REALTIONS***
