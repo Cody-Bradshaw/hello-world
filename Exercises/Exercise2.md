@@ -1,15 +1,16 @@
 # ***Step One***
 
-PET and OWNER (PetName, PetType, PetBreed, PetDOB, OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail, Service, Date, Charge)
+PET & OWNER   
+(PetName, PetType, PetBreed, PetDOB, OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail, Service, Date, Charge)
 
 Functional Dependencies:
- * PetName -->(PetType, PetBreed, PetDOB, OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail)
- * OwnerEmail --> (OwnerLastName, OwnerFirstName, OwnerPhone)
- * OwnerPhone --> (OwnerLastName, OwnerFirstName, OwnerEmail)
+ 1. PetName -->(PetType, PetBreed, PetDOB, OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail)
+ 1. OwnerEmail --> (OwnerLastName, OwnerFirstName, OwnerPhone)
+ 1. OwnerPhone --> (OwnerLastName, OwnerFirstName, OwnerEmail)
  
-PET and OWNER Candidate Keys: PetName
-Is every determinant a candidate key?
-NO PetName, OwnerEmail and OwnerPhone are NOT candidate keys.
+PET & OWNER Candidate Keys: PetName
+**Is every determinant a candidate key?**  
+NOPE __PetName__, __OwnerEmail__ and __OwnerPhone__ are NOT candidate keys.
 
 ## ***Step Two***
 
@@ -50,7 +51,7 @@ PET  Functional Dependencies:
 PET Candidate Keys: PetNa
 Is every determinant a candidate key?
 YES PetName is a candidate key Normalization complete!
-#### FINAL NORMALIZED REALTIONS:
+#### ***NORMALIZED REALTIONS***
 
  * OWNER (OwnerPhone, OwnerLastName, OwnerFirstName, OwnerEmail)
  * PET (PetName, PetType, PetBreed, PetDOB, OwnerPhone)
