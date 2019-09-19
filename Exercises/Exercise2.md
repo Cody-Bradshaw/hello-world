@@ -42,9 +42,9 @@ No PetName is not a candidate key
 ### ***Step Three***
 
 Break Pet into two relations, PET and SERVICE
- * **OWNER** (OwnerPhone, OwnerLastName, OwnerFirstName, OwnerEmail)
- * **PET** (PetName, PetType, PetBreed, PetDOB, OwnerPhone)
- * **SERVICE** (PetName, Date, Service, Charge)
+ 1. **OWNER** (OwnerPhone, OwnerLastName, OwnerFirstName, OwnerEmail)
+ 1. **PET** (PetName, PetType, PetBreed, PetDOB, OwnerPhone)
+ 1. **SERVICE** (PetName, Date, Service, Charge)
 PET  Functional Dependencies:
  * **PetName** --> (PetType, PetBreed, PetDOB, OwnerPhone)
 PET Candidate Keys: PetName   
