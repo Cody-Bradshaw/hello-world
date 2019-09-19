@@ -8,7 +8,7 @@ Functional Dependencies:
  1. **OwnerEmail** --> (OwnerLastName, OwnerFirstName, OwnerPhone)
  1. **OwnerPhone** --> (OwnerLastName, OwnerFirstName, OwnerEmail)
  
-PET & OWNER Candidate Keys: PetName
+PET & OWNER Candidate Keys: PetName   
 **Is every determinant a candidate key?**  
 NOPE __PetName__, __OwnerEmail__ and __OwnerPhone__ are NOT candidate keys.
 
@@ -24,7 +24,6 @@ Break into two relations: OWNER & PET
  * **OwnerPhone** --> (OwnerLastName, OwnerFirstName, OwnerEmail)
  * OWNER Candidate Keys: OwnerPhone, OwnerEmail   
 ***Is every determinant a candidate key?***
-
 YES OwnerEmail and OwnerPhone are candidate keys!
 
 We can choose pick the primary key from either of the canidates.
