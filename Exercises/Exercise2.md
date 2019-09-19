@@ -1,4 +1,4 @@
-# Step One
+# ***Step One***
 
 PET and OWNER (PetName, PetType, PetBreed, PetDOB, OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail, Service, Date, Charge)
 
@@ -11,7 +11,7 @@ PET and OWNER Candidate Keys: PetName
 Is every determinant a candidate key?
 NO PetName, OwnerEmail and OwnerPhone are NOT candidate keys.
 
-## Step Two
+## ***Step Two***
 
 Break into two relations: OWNER and PET
  * OWNER (OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail)
@@ -39,7 +39,7 @@ PET and Service Candidate Keys: PetName
 Is every determinant a candidate key?
 No PetName is not a candidate key
 
-### Step Three :
+### ***Step Three***
 
 Break Pet into two relation PET and SERVICE
  * OWNER (OwnerPhone, OwnerLastName, OwnerFirstName, OwnerEmail)
@@ -47,7 +47,7 @@ Break Pet into two relation PET and SERVICE
  * SERVICE (PetName, Date, Service, Charge)
 PET  Functional Dependencies:
  * PetName --> (PetType, PetBreed, PetDOB, OwnerPhone)
-PET Candidate Keys: PetName
+PET Candidate Keys: PetNa
 Is every determinant a candidate key?
 YES PetName is a candidate key Normalization complete!
 #### FINAL NORMALIZED REALTIONS:
